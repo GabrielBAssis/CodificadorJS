@@ -32,7 +32,7 @@ import 'iconify-icon'
         </button>
       </section>
     </section>
-    <section class="container-general__data-output">
+    <section class="container-geral_data-output">
       <div class="container-geral_output-area" id="output-area">
         <div class="container-geral_center-area" id="hide-area">
           <img class="container-geral_output-area_image" src="./assets/imgs/desenho1.png">
@@ -43,10 +43,32 @@ import 'iconify-icon'
         <p class="container-general_output-area_texto-secundario" id="output-area-text">
           Digite um texto que você queira criptografar ou descriptografar
         </p>
+        <button class ="botao-copiar" id="copiar" onclick="copyText()">Copiar</button>
       </div>
     </section>
   </main>
 <script src="./assets/js/script.js"></script>
 <script src="https://code.iconify.design/iconify-icon/2.0.0/iconify-icon.min.js"></script>
+<script>
+  function copyText() {
+  // Get the div element
+  var divElement = document.getElementById("output-area-text");
+
+  // Create a range object
+  var range = document.createRange();
+
+  // Select the contents of the div element
+  range.selectNode(divElement);
+
+  // Add the range to the user's selection
+  window.getSelection().addRange(range);
+
+  // Copy the selected text to the clipboard
+  document.execCommand("copy");
+
+  // Give a visual feedback to the user that the text has been copied
+  alert("Texto Copiado!");
+}
+</script>
 </body>
 </html>
