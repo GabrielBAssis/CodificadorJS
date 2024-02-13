@@ -74,7 +74,8 @@ body {
 }
 
 .container-geral_botoes_encrypts,
-.container-geral_botoes_decrypts {
+.container-geral_botoes_decrypts,
+.botao-copiar {
   margin: 0.5rem;
   height: 4rem;
   width: 20rem;
@@ -93,6 +94,7 @@ body {
 
 .container-geral_botoes_encrypts:hover {
   background-position: left bottom;
+  color: #fff;
 }
 
 .container-geral_botoes_decrypts {
@@ -105,6 +107,20 @@ body {
 }
 
 .container-geral_botoes_decrypts:hover {
+  background-position: left bottom;
+  color: #fff;
+}
+
+.botao-copiar{
+  border: none;
+  background: linear-gradient(to right, #1930e0 50%, #547dde 50%);
+  background-position: right bottom;
+  transition: all 300ms ease-out;
+  background-size: 200% 100%;
+  color: #fff;
+}
+
+.botao-copiar:hover{
   background-position: left bottom;
   color: #fff;
 }
