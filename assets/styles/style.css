@@ -82,6 +82,7 @@ body {
   width: 20rem;
   border-radius: 1rem;
   font-weight: 100px;
+  width: 350px; 
 }
 
 .container-geral_botoes_encrypts {
@@ -133,8 +134,9 @@ body {
   padding: 1rem;
   background: #FFFFFF;
   border-radius: 1rem;
-  box-shadow: 2px 25px 32px -8px rgba(0, 0, 0, 0.08);
+  box-shadow: 5px 25px 32px -8px rgba(0, 0, 0, 0.08);
   color: #343A40;
+  max-width: fit-content; 
 }
 
 .container-geral_output-area_texto{

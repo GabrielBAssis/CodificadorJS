@@ -17,11 +17,11 @@ import 'iconify-icon'
     <h1 class="header-principal-titulo">DecoderJS</h1>
   </header>
   <main class="container-geral">
-    <section class="container-geral_entrada-dados ">
-      <textarea name="text" rows="4" cols="50" class="container-geral_input" placeholder = "Digite seu texto" id = "input-area"></textarea>
+    <section class="container-geral_entrada-dados">
+      <textarea name="text" type="text" rows="4" cols="2" maxlength= "200" class="container-geral_input" placeholder = "Digite seu texto" id = "input-area"></textarea>
       <section class="container-geral_informacao">
         <iconify-icon class = "iconify-icon" icon="mingcute:alert-fill"></iconify-icon>
-        <p class="container-general_informacao_text">Apenas letras minúsculas e sem acentos!!</p>
+        <p class="container-geral_informacao_text">Apenas letras minúsculas e sem acentos!!</p>
       </section>
       <section class="container-geral_botoes">
         <button class="container-geral_botoes_encrypts" id="button-criptografa">
@@ -33,14 +33,14 @@ import 'iconify-icon'
       </section>
     </section>
     <section class="container-geral_data-output">
-      <div class="container-geral_output-area" id="output-area">
+      <div type="text" maxlength= "200" class="container-geral_output-area" id="output-area">
         <div class="container-geral_center-area" id="hide-area">
-          <img class="container-geral_output-area_image" src="./assets/imgs/desenho1.png">
+          <img class="container-geral_output-area_image" src="./assets/imgs/macaco.png">
         </div>
         <h2 class="container-geral_output-area_texto" id="hide-area2">
           Nenhuma mensagem encontrada
         </h2>
-        <p class="container-general_output-area_texto-secundario" id="output-area-text">
+        <p class="container-geral_output-area_texto-secundario" id="output-area-text">
           Digite um texto que você queira criptografar ou descriptografar
         </p>
         <button class ="botao-copiar" id="copiar" onclick="copyText()">Copiar</button>
@@ -67,7 +67,7 @@ import 'iconify-icon'
   document.execCommand("copy");
 
   // Give a visual feedback to the user that the text has been copied
-  alert("Texto Copiado!");
+   alert("Texto Copiado!");
 }
 </script>
 </body>
