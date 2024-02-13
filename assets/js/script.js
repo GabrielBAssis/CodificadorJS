@@ -1,3 +1,4 @@
+document.getElementById('input-area').value = '';
 const buttonEncrypt = document.getElementById('button-criptografa')
 const buttonDecrypt = document.getElementById('button-descriptografa')
 
@@ -29,6 +30,8 @@ buttonEncrypt.onclick = () => {
   hideArea2.style.display = 'none'
   outputArea.style.justifyContent = 'start'
   outputAreaText.innerHTML = arrayListEncrypt.join('')
+  botaoCopiar.style.display = 'none'
+  
 }
 
 buttonDecrypt.onclick = () => {
@@ -42,10 +45,8 @@ buttonDecrypt.onclick = () => {
   hideArea2.style.display = 'none'
   outputArea.style.justifyContent = 'start'
   outputAreaText.innerHTML = decrypt
+  botaoCopiar.style.display = 'start'
 }
+ 
 
-document.getElementById('clipboardCopy').addEventListener('click', clipboardCopy);
-async function clipboardCopy() {
-  let text = document.querySelector("#input").value;
-  await navigator.clipboard.writeText(text);
-}
+

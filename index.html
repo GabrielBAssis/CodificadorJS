@@ -24,10 +24,10 @@ import 'iconify-icon'
         <p class="container-geral_informacao_text">Apenas letras minúsculas e sem acentos!!</p>
       </section>
       <section class="container-geral_botoes">
-        <button class="container-geral_botoes_encrypts" id="button-criptografa">
+        <button type="button" class="container-geral_botoes_encrypts" id="button-criptografa">
           Criptografar
         </button>
-        <button class="container-geral_botoes_decrypts" id="button-descriptografa">
+        <button type="button" class="container-geral_botoes_decrypts" id="button-descriptografa">
           Descriptografar
         </button>
       </section>
@@ -43,7 +43,7 @@ import 'iconify-icon'
         <p class="container-geral_output-area_texto-secundario" id="output-area-text">
           Digite um texto que você queira criptografar ou descriptografar
         </p>
-        <button class ="botao-copiar" id="copiar" onclick="copyText()">Copiar</button>
+        <button type="button" class ="botao-copiar" id="copiar" onclick="copyText()">Copiar</button>
       </div>
     </section>
   </main>
@@ -66,8 +66,8 @@ import 'iconify-icon'
   // Copy the selected text to the clipboard
   document.execCommand("copy");
 
-  // Give a visual feedback to the user that the text has been copied
-   alert("Texto Copiado!");
+  // // Give a visual feedback to the user that the text has been copied
+  //  alert("Texto Copiado!");
 }
 </script>
 </body>
