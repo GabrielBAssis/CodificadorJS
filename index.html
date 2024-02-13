@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codificador/Decodificador de Texto</title>
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <link rel="icon" type="image/x-icon" href="./assets/imgs/gatoicon.png">
+</head>
+<body>
+  <header class="header-principal">
+   <img class ="header-principal-icon" src="./assets/imgs/logo.png">
+    <h1 class="header-principal-titulo">DecoderJS</h1>
+  </header>
+  <main class="container-geral">
+    <section class="container-geral_entrada-dados ">
+      <textarea name="text" rows="4" cols="50" class="container-geral_input" placeholder = "Digite seu texto"></textarea>
+      <section class="container-geral_informacao">
+        <!-- <span class="mingcute--alert-octagon-line-container-geral_informacao_icon" data-icon="mingcute--alert-octagon-line"></span> -->
+        <symbol id="mingcute--alert-octagon-line" viewBox="0 0 24 24"><g fill="none">
+        <p class="container-general_informacao_text">Apenas letras minúsculas e sem acentos!!</p>
+      </section>
+      <section class="container-geral_botoes">
+        <button class="container-geral_botoes_encrypts" id="button-encrypts">
+          Criptografar
+        </button>
+        <button class="container-geral_botoes_decrypts" id="button-decrypts">
+          Descriptografar
+        </button>
+      </section>
+    </section>
+    <section class="container-general__data-output">
+      <div class="container-general__output-area" id="output-area">
+        <div class="container-general__center-area" id="hide-area">
+          <img class="container-general__output-area__image-search" src="./assets/imgs/desenho1.png">
+        </div>
+        <h2 class="container-general__output-area__title-empty-area" id="hide-area2">
+          Nenhuma mensagem encontrada
+        </h2>
+        <p class="container-general__output-area__area-receiving-output" id="output-area-text">
+          Digite um texto que você queira criptografar ou descriptografar
+        </p>
+      </div>
+    </section>
+  </main>
+<script src="./assets/js/script.js"></script>
+<script src="https://code.iconify.design/iconify-icon/2.0.0/iconify-icon.min.js"></script>
+</body>
+</html>

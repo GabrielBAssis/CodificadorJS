@@ -1,0 +1,23 @@
+{
+  "name": "decodificadorjs",
+  "version": "1.0.0",
+  "description": "Este é o primeiro desafio desenvolvido durante o programa **ONE - Oracle Next Education**, com o objetivo de colocar em prática os conteúdos estudados. O desafio consiste em criar um **codificador/decodificador** de texto utilizando conhecimentos em **HTML**, **CSS** e **JavaScript** adquiridos durante as aulas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielBAssis/CodificadorJS.git"
+  },
+  "author": "gabriel bello assis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GabrielBAssis/CodificadorJS/issues"
+  },
+  "homepage": "https://github.com/GabrielBAssis/CodificadorJS#readme",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-plugin-vue": "^9.21.1"
+  }
+}
