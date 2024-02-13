@@ -25,11 +25,9 @@ buttonEncrypt.onclick = () => {
       arrayListEncrypt.push(arrayListText[i])
     }
   }
-
   hideArea.style.display = 'none'
   hideArea2.style.display = 'none'
   outputArea.style.justifyContent = 'start'
-
   outputAreaText.innerHTML = arrayListEncrypt.join('')
 }
 
@@ -39,13 +37,10 @@ buttonDecrypt.onclick = () => {
   const outputAreaText = document.getElementById('output-area-text')
   const hideArea = document.getElementById('hide-area')
   const hideArea2 = document.getElementById('hide-area2')
-
   const decrypt = textEntry.replace(/enter/g, 'e').replace(/imes/g, 'i').replace(/ai/g, 'a').replace(/ober/g, 'o').replace(/ufat/g, 'u')
-
   hideArea.style.display = 'none'
   hideArea2.style.display = 'none'
   outputArea.style.justifyContent = 'start'
-
   outputAreaText.innerHTML = decrypt
 }
 
