@@ -9,7 +9,8 @@
 }
 
 body {
-  background: #F3F5FC;
+  background: rgb(9,9,121);
+  background: linear-gradient(90deg, rgba(9,9,121,1) 19%, rgba(8,40,141,1) 31%, rgba(0,212,255,1) 100%); 
   font-family: "Gill Sans Extrabold", sans-serif;
 }
 
@@ -24,7 +25,7 @@ body {
 }
 
 .header-principal-titulo {
-  color:#4e75ca;
+  color:#dfdfdf;
   font-size: 2rem;
   font-family: ui-rounded;
 }
@@ -41,9 +42,8 @@ body {
   resize: none;
   color: #0A3871;
   font-size: 2rem;
-  background: none;
   font-weight: 200px;
-  border: none;
+  border: #0A3871;
 }
 
 .container-geral_informacao {
@@ -54,17 +54,18 @@ body {
 
 .iconify-icon {
   font-size: 1.4rem;
-  color: #547dde;
+  color: #c72b2b;
+  padding-right: 0.2rem;
 }
 
 .iconify-titulo{
   font-size: 3.2rem;
-  color: #547dde;
+  color: #dfdfdf;
 }
 
 .container-geral_informacao_text {
-  font-size: 0.8rem;
-  color: #343A40;
+  font-size: 1rem;
+  color: #e1e6eb;
 }
 
 .container-geral_botoes {
@@ -118,6 +119,8 @@ body {
   transition: all 300ms ease-out;
   background-size: 200% 100%;
   color: #fff;
+  width: 350px;
+  margin-top: 2rem;
 }
 
 .botao-copiar:hover{
@@ -141,6 +144,10 @@ body {
   font-size: 2rem;
 }
 
+.container-geral_data-output{
+  align-items: center;
+}
+
 .container-general_output-area_texto-secundario{
   text-align: center;
   font-weight: 400px;
@@ -148,7 +155,47 @@ body {
 
 .container-geral_center-area {
  display: block;
+ align-items: center;
 }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
 
 /*Responsividade telas grandes */
 @media (min-width: 1025px) {
@@ -160,6 +207,8 @@ body {
 
   .container-geral_output-area_image{
     width: 20rem;
+    align-content: center;
+    
   }
 
   .container-geral_output-area{
@@ -172,6 +221,7 @@ body {
 
   .container-geral_entrada-dados {
     text-align: left;
+    border: #0A3871;
   }
 
   .container-geral_input {
@@ -180,6 +230,8 @@ body {
     margin-left: 4rem;
     margin-right: 4rem;
     margin-bottom: 2rem;
+    border: #0A3871;
+    border-color:#0A3871 ;
   }
 
   .container-geral {
